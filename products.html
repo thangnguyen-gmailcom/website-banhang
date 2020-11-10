@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fashion store</title>
+    <link rel="stylesheet" href="fontawesome-free/css/all.min.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body class="overplay-scrollbar">
+    <!-- Navbar -->
+    <div class="navbar">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link">
+            <i
+              class="fas fa-bars dropdown-toggle menu"
+              data-toggle="navbar-menu"
+            ></i>
+          </a>
+          <ul id="navbar-menu" class="dropdown-menu">
+            <li class="dropdown-menu-item">
+              <a href="#" class="dropdown-menu-link">
+                <div>
+                  <i class="fas fa-user"></i>
+                </div>
+                <span>Trang chủ</span>
+              </a>
+            </li>
+            <li class="dropdown-menu-item">
+              <a href="#" class="dropdown-menu-link">
+                <div>
+                  <i class="fas fa-cogs"></i>
+                </div>
+                <span>Giới thiệu</span>
+              </a>
+            </li>
+            <li class="dropdown-menu-item">
+              <a href="#" class="dropdown-menu-link">
+                <div>
+                  <i class="fas fa-credit-card"></i>
+                </div>
+                <span>Tin tức</span>
+              </a>
+            </li>
+            <li class="dropdown-menu-item">
+              <a href="#" class="dropdown-menu-link">
+                <div>
+                  <i class="fas fa-sign-out-alt"></i>
+                </div>
+                <span>Liên hệ</span>
+              </a>
+            </li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <img src="img/Logo.png" class="logo" />
+        </li>
+        <li class="nav-item">
+          <div class="nav-links">
+            <a class="nav-link">
+              <span>Trang chủ</span>
+            </a>
+            <a class="nav-link">
+              <span>Giới thiệu</span>
+            </a>
+            <a class="nav-link">
+              <span>Liên hệ</span>
+            </a>
+            <a class="nav-link">
+              <span>Tin tức </span>
+            </a>
+          </div>
+        </li>
+      </ul>
+      <form class="navbar-search">
+        <input
+          type="text "
+          name="Search"
+          class="navbar-search-input"
+          placeholder="Tìm kiếm hàng..."
+        />
+        <i class="fas fa-search"></i>
+      </form>
+      <!--Navbar-right-->
+      <ul class="navbar-nav nav-right">
+        <li class="nav-item dropdown">
+          <a class="nav-link">
+            <i
+              class="fas fa-cart-arrow-down dropdown-toggle"
+              data-toggle="notification-menu"
+            ></i>
+            <span class="navbar-badge">15</span>
+          </a>
+          <ul id="notification-menu" class="dropdown-menu notification-menu">
+            <div class="dropdown-menu-header">
+              <span> New purchase </span>
+            </div>
+            <div class="dropdown-menu-content">
+              <li class="dropdown-menu-item">
+                <a href="#" class="dropdown-menu-link">
+                  <div>
+                    <i class="fas fa-gift"></i>
+                  </div>
+                  <span>
+                    Waiting for delivery
+                    <br />
+                    <span>15</span>
+                  </span>
+                </a>
+              </li>
+            </div>
+            <div class="dropdown-menu-footer">
+              <span>Goods received</span>
+            </div>
+          </ul>
+        </li>
+        <!--Avatar-->
+        <li class="nav-item">
+          <div class="avt dropdown">
+            <img
+              src="img/product-slide1.jpg"
+              class="dropdown-toggle"
+              data-toggle="user-menu"
+            />
+            <ul id="user-menu" class="dropdown-menu">
+              <li class="dropdown-menu-item">
+                <a href="#" class="dropdown-menu-link">
+                  <div>
+                    <i class="fas fa-user"></i>
+                  </div>
+                  <span>Profile</span>
+                </a>
+              </li>
+              <li class="dropdown-menu-item">
+                <a href="#" class="dropdown-menu-link">
+                  <div>
+                    <i class="fas fa-cogs"></i>
+                  </div>
+                  <span>Setting</span>
+                </a>
+              </li>
+              <li class="dropdown-menu-item">
+                <a href="#" class="dropdown-menu-link">
+                  <div>
+                    <i class="fas fa-credit-card"></i>
+                  </div>
+                  <span>Payment</span>
+                </a>
+              </li>
+              <li class="dropdown-menu-item">
+                <a href="#" class="dropdown-menu-link">
+                  <div>
+                    <i class="fas fa-sign-out-alt"></i>
+                  </div>
+                  <span>Logout</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+      <!--End navbar right-->
+    </div>
+    <!--End Navbar-->
+    <!--Sidebar-->
+    <div class="sidebar">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-item">
+          <a href="#" class="sidebar-nav-link">
+            <div>
+              <i class="fas fa-shopping-bag"></i>
+            </div>
+            <span> Thời trang </span>
+          </a>
+        </li>
+        <li class="sidebar-nav-item">
+          <a href="#" class="sidebar-nav-link">
+            <div>
+              <i class="fas fa-mobile"></i>
+            </div>
+            <span> Điện thoại & Ipad </span>
+          </a>
+        </li>
+        <li class="sidebar-nav-item">
+          <a href="#" class="sidebar-nav-link">
+            <div>
+              <i class="fas fa-paperclip"></i>
+            </div>
+            <span>Mỹ phẩm</span>
+          </a>
+        </li>
+        <li class="sidebar-nav-item">
+          <a href="#" class="sidebar-nav-link">
+            <div>
+              <i class="fas fa-volleyball-ball"></i>
+            </div>
+            <span> Thể thao </span>
+          </a>
+        </li>
+        <li class="sidebar-nav-item">
+          <a href="#" class="sidebar-nav-link">
+            <div>
+              <i class="fas fa-child"></i>
+            </div>
+            <span> Mẹ và bé </span>
+          </a>
+        </li>
+        <li class="sidebar-nav-item">
+          <a href="#" class="sidebar-nav-link">
+            <div>
+              <i class="fas fa-headphones-alt"></i>
+            </div>
+            <span>Phụ kiện công nghệ </span>
+          </a>
+        </li>
+        <li class="sidebar-nav-item">
+          <a href="#" class="sidebar-nav-link">
+            <div>
+              <i class="fas fa-laptop-code"></i>
+            </div>
+            <span>Laptop</span>
+          </a>
+        </li>
+        <li class="sidebar-nav-item">
+          <a href="#" class="sidebar-nav-link">
+            <div>
+              <i class="fas fa-ring"></i>
+            </div>
+            <span> Trang sức </span>
+          </a>
+        </li>
+        <li class="sidebar-nav-item">
+          <a href="#" class="sidebar-nav-link">
+            <div>
+              <i class="fas fa-microchip"></i>
+            </div>
+            <span>Điện lạnh</span>
+          </a>
+        </li>
+        <li class="sidebar-nav-item">
+          <a href="#" class="sidebar-nav-link">
+            <div>
+              <i class="fas fa-palette"></i>
+            </div>
+            <span>nội thất</span>
+          </a>
+        </li>
+        <li class="sidebar-nav-item">
+          <a href="#" class="sidebar-nav-link">
+            <div>
+              <i class="fas fa-camera-retro"></i>
+            </div>
+            <span> Máy ảnh </span>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <!--End sidebar-->
+    <!--Main content-->
+    <div class="wrapper">
+      <!--Slide-->
+      <div class="wrapper-slide">
+        <div class="slide-show">
+          <div class="show slide-1">
+            <img id="img" src="img/slide1.jpg" alt="" onclick="changeImage()" />
+          </div>
+        </div>
+        <div class="btn-slide">
+          <span id="btn-prev"><i class="fas fa-chevron-left"></i></span>
+          <span id="btn-next"><i class="fas fa-chevron-right"></i></span>
+        </div>
+      </div>
+      <!--End slide show-->
+      <!--Product slide-->
+      <div class="products-slide">
+        <h3>Siêu Phẩm khuyến mãi</h3>
+        <div class="btn-slide">
+          <span id="btn-prev"><i class="fas fa-chevron-left"></i></span>
+          <span id="btn-next"><i class="fas fa-chevron-right"></i></span>
+        </div>
+        <section class="grid-container">
+          <div class="box-slide slide">
+            <p class="product">Sale -10%</p>
+            <img class="model" src="img/product-slide12.jpg" />
+            <div class="details">
+              <p id="details-1">Áo khoác nữ</p>
+              <p id="details-2">1,705,000 VNĐ</p>
+              <p id="details-3">1,900.000 VNĐ</p>
+            </div>
+          </div>
+          <div class="box-slide slide">
+            <p class="product">Sale -35%</p>
+            <img class="model" src="img/product-slide1.jpg" />
+            <div class="details">
+              <p id="details-1">Đầm body cá tính</p>
+              <p id="details-2">1,705,000 VNĐ</p>
+              <p id="details-3">1,900.000 VNĐ</p>
+            </div>
+          </div>
+          <div class="box-slide slide">
+            <p class="product">Sale -10%</p>
+            <img class="model" src="img/product-slide2.jpg" />
+            <div class="details">
+              <p id="details-1">Đầm maxi dự tiệc</p>
+              <p id="details-2">1,705,000 VNĐ</p>
+              <p id="details-3">1,900.000 VNĐ</p>
+            </div>
+          </div>
+          <div class="box-slide slide">
+            <p class="product">Sale -10%</p>
+            <img class="model" src="img/product-slide3.jpg" />
+            <div class="details">
+              <p id="details-1">Đầm body tay dài</p>
+              <p id="details-2">1,705,000 VNĐ</p>
+              <p id="details-3">1,900.000 VNĐ</p>
+            </div>
+          </div>
+        </section>
+      </div>
+      <!--End product slide-->
+      <!--Fashion-->
+      <div class="fashion">
+        <div class="navbar-brand" id="topNav">
+          <a href="#" id="fashion">THỜI TRANG</a>
+          <a href="#" id="all">Tất cả sản phẩm</a>
+          <a href="#">Áo sơ mi</a>
+          <a href="#">Áo khoác</a>
+          <a href="#">Áo thun</a>
+          <a href="#">Đầm, váy nữ </a>
+          <a href="#">Chân váy</a>
+          <a href="#">Đồ lót, đồ ngủ</a>
+          <a href="#">Đồ bơi</a>
+          <a href="#">Phụ kiện</a>
+          <a href="#" class="icon">☰</a>
+        </div>
+        <div class="grid-container">
+          <div class="box-slide">
+            <p class="product">HOT</p>
+            <img class="model" src="img/defature1.jpg" />
+            <div class="details">
+              <p id="details-1">Đầm nữ bản lật DA971</p>
+              <p id="details-2">1,705,000 VNĐ</p>
+              <p>Đã bán : 30</p>
+            </div>
+          </div>
+          <div class="box-slide">
+            <p class="product">HOT</p>
+            <img class="model" src="img/defature4.jpg" />
+            <div class="details">
+              <p id="details-1">Đầm cổ V bản lật DA974</p>
+              <p id="details-2">1,705,000 VNĐ</p>
+              <p>Đã bán : 30</p>
+            </div>
+          </div>
+          <div class="box-slide">
+            <p class="product">HOT</p>
+            <img class="model" src="img/defature1.jpg" />
+            <div class="details">
+              <p id="details-1">Đầm nữ bản lật DA971</p>
+              <p id="details-2">1,705,000 VNĐ</p>
+              <p>Đã bán : 30</p>
+            </div>
+          </div>
+          <div class="box-slide">
+            <p class="product">HOT</p>
+            <img class="model" src="img/defature4.jpg" />
+            <div class="details">
+              <p id="details-1">Đầm cổ V bản lật DA974</p>
+              <p id="details-2">1,705,000 VNĐ</p>
+              <p>Đã bán : 30</p>
+            </div>
+          </div>
+          <div class="box-slide">
+            <p class="product">HOT</p>
+            <img class="model" src="img/defature1.jpg" />
+            <div class="details">
+              <p id="details-1">Đầm nữ bản lật DA971</p>
+              <p id="details-2">1,705,000 VNĐ</p>
+              <p>Đã bán : 30</p>
+            </div>
+          </div>
+          <div class="box-slide">
+            <p class="product">HOT</p>
+            <img class="model" src="img/defature4.jpg" />
+            <div class="details">
+              <p id="details-1">Đầm cổ V bản lật DA974</p>
+              <p id="details-2">1,705,000 VNĐ</p>
+              <p>Đã bán : 30</p>
+            </div>
+          </div>
+          <div class="box-slide">
+            <p class="product">HOT</p>
+            <img class="model" src="img/defature2.png" />
+            <div class="details">
+              <p id="details-1">Đầm cổ V bản lật DA972</p>
+              <p id="details-2">1,705,000 VNĐ</p>
+              <p>Đã bán : 30</p>
+            </div>
+          </div>
+          <div class="box-slide">
+            <p class="product">HOT</p>
+            <img class="model" src="img/defature5.jpg" />
+            <div class="details">
+              <p id="details-1">Đầm cổ V bản lật DA975</p>
+              <p id="details-2">1,705,000 VNĐ</p>
+              <p>Đã bán : 30</p>
+            </div>
+          </div>
+          <div class="box-slide">
+            <p class="product">HOT</p>
+            <img class="model" src="img/defature3.jpg" />
+            <div class="details">
+              <p id="details-1">Đầm cổ V bản lật DA973</p>
+              <p id="details-2">1,705,000 VNĐ</p>
+              <p>Đã bán : 30</p>
+            </div>
+          </div>
+          <div class="box-slide">
+            <p class="product">HOT</p>
+            <img class="model" src="img/defature6.jpg" />
+            <div class="details">
+              <p id="details-1">Đầm cổ V DA976</p>
+              <p id="details-2">1,705,000 VNĐ</p>
+              <p>Đã bán : 30</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--End fashion-->
+    </div>
+    <!--End main content-->
+    <!--footer-->
+    <footer>
+      <div class="main-content">
+        <div class="left box">
+          <h2>VỀ CHÚNG TÔI</h2>
+          <div class="content">
+            <ul>
+              <li><a href="#"> Giới thiệu</a></li>
+              <li><a href="#">Giao hàng - Đổi trả</a></li>
+              <li><a href="#">Chính sách bảo mật</a></li>
+              <li><a href="#">Liên hệ</a></li>
+            </ul>
+            <div class="social">
+              <a href=""><span class="fab fa-facebook-f" id="f"></span></a>
+              <a href=""><span class="fab fa-twitter" id="t"></span></a>
+              <a href=""><span class="fab fa-google-plus" id="g"></span></a>
+              <a href=""><span class="fab fa-youtube" id="y"></span></a>
+            </div>
+          </div>
+        </div>
+        <div class="center box">
+          <h2>Địa chỉ</h2>
+          <div class="content">
+            <div class="place">
+              <span class="fas fa-map-marked-alt"></span>
+              <span class="text">1005 Quang Trung, P.14, Q.Gò Vấp, Tp.HCM</span>
+            </div>
+            <div class="phone">
+              <span class="fas fa-phone-alt"></span>
+              <span class="text">(08) 66 85 85 38</span>
+            </div>
+            <div class="email">
+              <span class="fas fa-envelope"></span>
+              <span class="text">run02@runtime.vn</span>
+            </div>
+          </div>
+        </div>
+        <div class="right-box">
+          <h2>Ý KIẾN ĐÓNG GÓP</h2>
+          <div class="content">
+            <form action="#">
+              <div class="email">
+                <div class="text">Email *</div>
+                <input type="email" required />
+              </div>
+              <div class="msg">
+                <div class="text">Message *</div>
+                <textarea id="" cols="25" rows="2" required></textarea>
+              </div>
+              <div class="btn">
+                <button type="submit">Send</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!--End footer-->
+    <script src="js/index.js"></script>
+  </body>
+</html>

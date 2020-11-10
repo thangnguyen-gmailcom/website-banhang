@@ -1,0 +1,254 @@
+.navbar {
+  display: flex;
+  flex-direction: row;
+  background-color: var(--main-bg-color);
+  color: var(--main-color);
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 999;
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 4px 1px;
+}
+
+.navbar-nav {
+  list-style: none;
+  display: flex;
+  padding-left: 0;
+  margin-bottom: 0;
+  margin-top: 0;
+  align-items: center;
+}
+
+.nav-link {
+  text-align: center;
+  padding: 21px 10px;
+  text-decoration: none;
+  font-size: 17px;
+  color: var(--second-color);
+  position: relative;
+}
+
+.nav-link:hover {
+  cursor: pointer;
+}
+
+.navbar-nav i {
+  font-size: 1.5rem;
+}
+
+.nav-right {
+  margin-left: auto;
+}
+
+.navbar-search {
+  position: relative;
+  margin: auto;
+  width: 30%;
+}
+
+.navbar-search input {
+  background-color: var(--second-bg-color);
+  border: none;
+  padding: 12px 50px 12px 50px;
+  width: 100%;
+  outline: none;
+  color: var(--main-color);
+  border-radius: 20px;
+}
+
+.navbar-search i {
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+  color: var(--main-color);
+  cursor: pointer;
+}
+
+.logo {
+  max-width: 80%;
+  height: 60px;
+  padding: 10px;
+}
+
+.avt img {
+  width: 39px;
+  height: 39px;
+  border-radius: 50%;
+}
+
+.avt {
+  padding: 11px;
+}
+
+.navbar-badge {
+  font-size: 0.6rem;
+  padding: 2px 4px;
+  font-weight: bold;
+  position: absolute;
+  right: 5px;
+  top: 9px;
+  color: green;
+  background-color: var(--main-bg-color);
+  border-radius: 5px;
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown:hover {
+  cursor: pointer;
+}
+.dropdown-menu {
+  list-style: none;
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  right: 20%;
+  top: 90%;
+  background-color: var(--main-bg-color);
+  max-width: 300px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  padding: unset;
+  border-radius: 10px;
+  border: 0.125px solid var(--second-bg-color);
+}
+
+.dropdown-expand {
+  display: flex;
+}
+
+.dropdown-menu-content {
+  max-height: 500px;
+  overflow-y: auto;
+}
+
+.dropdown-menu-item {
+  width: 100%;
+}
+
+.dropdown-menu-link {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-decoration: none;
+  color: var(--main-color);
+}
+
+.dropdown-menu-link div {
+  min-width: 82px;
+  height: 50px;
+  position: relative;
+}
+
+.dropdown-menu-link i {
+  font-size: 1rem;
+  color: var(--second-color);
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.dropdown-menu-link span {
+  font-size: 15px;
+  width: 298px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.dropdown-menu-link span > span {
+  font-size: 10px;
+  text-align: center;
+}
+
+.dropdown-menu-link:hover {
+  cursor: pointer;
+}
+
+.dropdown-menu-header {
+  padding: 20px;
+  text-align: center;
+  border-bottom: 1px solid var(--second-bg-color);
+}
+
+.dropdown-menu-footer {
+  padding: 20px;
+  text-align: center;
+  border-top: 1px solid var(--second-bg-color);
+}
+
+.wrapper {
+  padding: 10px;
+  margin-left: 82px;
+  padding-top: 75px;
+  background-color: var(--second-bg-color);
+}
+
+.sidebar {
+  width: 82px;
+  height: 100vh;
+  position: fixed;
+  margin-top: 62px;
+  background-color: var(--main-bg-color);
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 4px 1px;
+  overflow: hidden;
+  z-index: 1;
+  transition: 0.5s;
+}
+
+.sidebar:hover {
+  width: 250px;
+}
+
+.sidebar-nav {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+}
+
+.sidebar-nav-item {
+  width: 100%;
+}
+
+.sidebar-nav-link {
+  display: flex;
+  align-items: center;
+  color: var(--main-color);
+  text-decoration: none;
+}
+
+.sidebar-nav-link i {
+  font-size: 1.5rem;
+  color: var(--second-color);
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.sidebar-nav-link:hover {
+  background: var(--second-bg-color);
+}
+
+.sidebar-nav-link div {
+  min-width: 82px;
+  height: 50px;
+  position: relative;
+}
+
+.sidebar-expand .sidebar {
+  width: 250px;
+}
+
+.sidebar-expand .wrapper {
+  margin-left: 250px;
+}
