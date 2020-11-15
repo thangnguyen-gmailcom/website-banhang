@@ -16,46 +16,45 @@
     <div class="navbar">
       <ul class="navbar-nav">
         <li class="nav-item">
-          <a class="nav-link">
-            <i
-              class="fas fa-bars dropdown-toggle menu"
-              data-toggle="navbar-menu"
-            ></i>
-          </a>
-          <ul id="navbar-menu" class="dropdown-menu">
-            <li class="dropdown-menu-item">
-              <a href="#" class="dropdown-menu-link">
-                <div>
-                  <i class="fas fa-user"></i>
-                </div>
-                <span>Trang chủ</span>
-              </a>
-            </li>
-            <li class="dropdown-menu-item">
-              <a href="#" class="dropdown-menu-link">
-                <div>
-                  <i class="fas fa-cogs"></i>
-                </div>
-                <span>Giới thiệu</span>
-              </a>
-            </li>
-            <li class="dropdown-menu-item">
-              <a href="#" class="dropdown-menu-link">
-                <div>
-                  <i class="fas fa-credit-card"></i>
-                </div>
-                <span>Tin tức</span>
-              </a>
-            </li>
-            <li class="dropdown-menu-item">
-              <a href="#" class="dropdown-menu-link">
-                <div>
-                  <i class="fas fa-sign-out-alt"></i>
-                </div>
-                <span>Liên hệ</span>
-              </a>
-            </li>
-          </ul>
+          <div class="dropdown">
+            <a class="nav-link">
+              <i class="fas fa-bars"></i>
+            </a>
+            <ul id="notifi-menu" class="dropdown-menu">
+              <li class="dropdown-menu-item">
+                <a href="#" class="dropdown-menu-link">
+                  <div>
+                    <i class="fas fa-bahai"></i>
+                  </div>
+                  <span>Trang chủ</span>
+                </a>
+              </li>
+              <li class="dropdown-menu-item">
+                <a href="#" class="dropdown-menu-link">
+                  <div>
+                    <i class="fas fa-bahai"></i>
+                  </div>
+                  <span>Tin tức</span>
+                </a>
+              </li>
+              <li class="dropdown-menu-item">
+                <a href="#" class="dropdown-menu-link">
+                  <div>
+                    <i class="fas fa-bahai"></i>
+                  </div>
+                  <span>Liên hệ</span>
+                </a>
+              </li>
+              <li class="dropdown-menu-item">
+                <a href="#" class="dropdown-menu-link">
+                  <div>
+                    <i class="fas fa-bahai"></i>
+                  </div>
+                  <span>Giới thiệu</span>
+                </a>
+              </li>
+            </ul>
+          </div>
         </li>
         <li class="nav-item">
           <img src="img/Logo.png" class="logo" />
@@ -90,16 +89,10 @@
       <ul class="navbar-nav nav-right">
         <li class="nav-item dropdown">
           <a class="nav-link">
-            <i
-              class="fas fa-cart-arrow-down dropdown-toggle"
-              data-toggle="notification-menu"
-            ></i>
+            <i class="fas fa-cart-arrow-down"></i>
             <span class="navbar-badge">15</span>
           </a>
-          <ul id="notification-menu" class="dropdown-menu notification-menu">
-            <div class="dropdown-menu-header">
-              <span> New purchase </span>
-            </div>
+          <ul class="dropdown-menu">
             <div class="dropdown-menu-content">
               <li class="dropdown-menu-item">
                 <a href="#" class="dropdown-menu-link">
@@ -107,33 +100,40 @@
                     <i class="fas fa-gift"></i>
                   </div>
                   <span>
-                    Waiting for delivery
+                    Hàng mới mua
                     <br />
                     <span>15</span>
                   </span>
                 </a>
               </li>
             </div>
-            <div class="dropdown-menu-footer">
-              <span>Goods received</span>
+            <div class="dropdown-menu-link">
+              <li class="dropdown-menu-item">
+                <a href="#" class="dropdown-menu-link">
+                  <div>
+                    <i class="fas fa-gift"></i>
+                  </div>
+                  <span>
+                    Số lượng hàng đang ship
+                    <br />
+                    <span>15</span>
+                  </span>
+                </a>
+              </li>
             </div>
           </ul>
         </li>
         <!--Avatar-->
         <li class="nav-item">
           <div class="avt dropdown">
-            <img
-              src="img/product-slide1.jpg"
-              class="dropdown-toggle"
-              data-toggle="user-menu"
-            />
-            <ul id="user-menu" class="dropdown-menu">
+            <img src="img/product-slide1.jpg" />
+            <ul class="dropdown-menu">
               <li class="dropdown-menu-item">
                 <a href="#" class="dropdown-menu-link">
                   <div>
                     <i class="fas fa-user"></i>
                   </div>
-                  <span>Profile</span>
+                  <span>Thông tin</span>
                 </a>
               </li>
               <li class="dropdown-menu-item">
@@ -141,7 +141,7 @@
                   <div>
                     <i class="fas fa-cogs"></i>
                   </div>
-                  <span>Setting</span>
+                  <span>Cài đặt</span>
                 </a>
               </li>
               <li class="dropdown-menu-item">
@@ -149,7 +149,7 @@
                   <div>
                     <i class="fas fa-credit-card"></i>
                   </div>
-                  <span>Payment</span>
+                  <span>Phương thức Thanh toán</span>
                 </a>
               </li>
               <li class="dropdown-menu-item">
@@ -157,7 +157,7 @@
                   <div>
                     <i class="fas fa-sign-out-alt"></i>
                   </div>
-                  <span>Logout</span>
+                  <span>Đăng xuất</span>
                 </a>
               </li>
             </ul>
@@ -287,37 +287,49 @@
           <div class="box-slide slide">
             <p class="product">Sale -10%</p>
             <img class="model" src="img/product-slide12.jpg" />
+            <div class="readmore">
+              <span>Thêm vào giỏ hàng</span>
+            </div>
             <div class="details">
-              <p id="details-1">Áo khoác nữ</p>
-              <p id="details-2">1,705,000 VNĐ</p>
-              <p id="details-3">1,900.000 VNĐ</p>
+              <p id="details-1">Áo ấm ADPT 9</p>
+              <p id="details-2">170,500 VNĐ</p>
+              <p id="details-3">190,000 VNĐ</p>
             </div>
           </div>
           <div class="box-slide slide">
             <p class="product">Sale -35%</p>
             <img class="model" src="img/product-slide1.jpg" />
+            <div class="readmore">
+              <span>Thêm vào giỏ hàng</span>
+            </div>
             <div class="details">
-              <p id="details-1">Đầm body cá tính</p>
-              <p id="details-2">1,705,000 VNĐ</p>
-              <p id="details-3">1,900.000 VNĐ</p>
+              <p id="details-1">Áo khoác PT 5</p>
+              <p id="details-2">200,000 VNĐ</p>
+              <p id="details-3">145,000 VNĐ</p>
             </div>
           </div>
           <div class="box-slide slide">
             <p class="product">Sale -10%</p>
             <img class="model" src="img/product-slide2.jpg" />
+            <div class="readmore">
+              <span>Thêm vào giỏ hàng</span>
+            </div>
             <div class="details">
-              <p id="details-1">Đầm maxi dự tiệc</p>
-              <p id="details-2">1,705,000 VNĐ</p>
-              <p id="details-3">1,900.000 VNĐ</p>
+              <p id="details-1">Iphone pro-max</p>
+              <p id="details-2">31,705,000 VNĐ</p>
+              <p id="details-3">34,800.000 VNĐ</p>
             </div>
           </div>
           <div class="box-slide slide">
             <p class="product">Sale -10%</p>
             <img class="model" src="img/product-slide3.jpg" />
+            <div class="readmore">
+              <span>Thêm vào giỏ hàng</span>
+            </div>
             <div class="details">
-              <p id="details-1">Đầm body tay dài</p>
-              <p id="details-2">1,705,000 VNĐ</p>
-              <p id="details-3">1,900.000 VNĐ</p>
+              <p id="details-1">Macbook Air</p>
+              <p id="details-2">24,705,000 VNĐ</p>
+              <p id="details-3">26,900.000 VNĐ</p>
             </div>
           </div>
         </section>
@@ -325,106 +337,199 @@
       <!--End product slide-->
       <!--Fashion-->
       <div class="fashion">
-        <div class="navbar-brand" id="topNav">
-          <a href="#" id="fashion">THỜI TRANG</a>
-          <a href="#" id="all">Tất cả sản phẩm</a>
-          <a href="#">Áo sơ mi</a>
-          <a href="#">Áo khoác</a>
-          <a href="#">Áo thun</a>
-          <a href="#">Đầm, váy nữ </a>
-          <a href="#">Chân váy</a>
-          <a href="#">Đồ lót, đồ ngủ</a>
-          <a href="#">Đồ bơi</a>
-          <a href="#">Phụ kiện</a>
-          <a href="#" class="icon">☰</a>
-        </div>
+        <ul class="navbar-brand" id="topNav">
+          <li class="brand-new">
+            <span class="icons"><i class="fas fa-shopping-bag"></i></span>
+            <a href="#">THỜI TRANG</a>
+          </li>
+          <li class="top-menu" id="all"><a href="#">Tất cả sản phẩm</a></li>
+          <li class="top-menu"><a href="#">Áo sơ mi</a></li>
+          <li class="top-menu"><a href="#">Áo khoác</a></li>
+          <li class="top-menu"><a href="#">Áo thun</a></li>
+          <li class="top-menu"><a href="#">Đầm, váy nữ </a></li>
+          <li class="top-menu"><a href="#">Chân váy</a></li>
+          <li class="top-menu"><a href="#">Đồ lót, đồ ngủ</a></li>
+          <li class="top-menu"><a href="#">Đồ bơi</a></li>
+          <li class="top-menu"><a href="#">Phụ kiện</a></li>
+          <li class="dropdown brand">
+            <a href="#" class="fas fa-bars"></a>
+            <ul class="dropdown-menu sub">
+              <li class="dropdown-menu-item">
+                <a href="#" class="dropdown-menu-link">
+                  <div>
+                    <i class="fas fa-bahai"></i>
+                  </div>
+                  <span>Tất cả sản phẩm</span>
+                </a>
+              </li>
+              <li class="dropdown-menu-item">
+                <a href="#" class="dropdown-menu-link">
+                  <div>
+                    <i class="fas fa-bahai"></i>
+                  </div>
+                  <span>Áo sơ mi</span>
+                </a>
+              </li>
+              <li class="dropdown-menu-item">
+                <a href="#" class="dropdown-menu-link">
+                  <div>
+                    <i class="fas fa-bahai"></i>
+                  </div>
+                  <span>Áo khoác</span>
+                </a>
+              </li>
+              <li class="dropdown-menu-item">
+                <a href="#" class="dropdown-menu-link">
+                  <div>
+                    <i class="fas fa-bahai"></i>
+                  </div>
+                  <span>Áo thun</span>
+                </a>
+              </li>
+              <li class="dropdown-menu-item">
+                <a href="#" class="dropdown-menu-link">
+                  <div>
+                    <i class="fas fa-bahai"></i>
+                  </div>
+                  <span>Đầm,váy nữ</span>
+                </a>
+              </li>
+              <li class="dropdown-menu-item">
+                <a href="#" class="dropdown-menu-link">
+                  <div>
+                    <i class="fas fa-bahai"></i>
+                  </div>
+                  <span>Chân váy</span>
+                </a>
+              </li>
+              <li class="dropdown-menu-item">
+                <a href="#" class="dropdown-menu-link">
+                  <div>
+                    <i class="fas fa-bahai"></i>
+                  </div>
+                  <span>Đồ lót,đồ ngủ</span>
+                </a>
+              </li>
+              <li class="dropdown-menu-item">
+                <a href="#" class="dropdown-menu-link">
+                  <div>
+                    <i class="fas fa-bahai"></i>
+                  </div>
+                  <span>Đồ bơi</span>
+                </a>
+              </li>
+              <li class="dropdown-menu-item">
+                <a href="#" class="dropdown-menu-link">
+                  <div>
+                    <i class="fas fa-bahai"></i>
+                  </div>
+                  <span>Phụ kiện</span>
+                </a>
+              </li>
+            </ul>
+          </li>
+        </ul>
         <div class="grid-container">
           <div class="box-slide">
             <p class="product">HOT</p>
             <img class="model" src="img/defature1.jpg" />
+            <div class="readmore">
+              <i class="fas fa-cart-arrow-down"></i>
+              <span>Thêm vào giỏ hàng</span>
+            </div>
             <div class="details">
               <p id="details-1">Đầm nữ bản lật DA971</p>
               <p id="details-2">1,705,000 VNĐ</p>
-              <p>Đã bán : 30</p>
-            </div>
-          </div>
-          <div class="box-slide">
-            <p class="product">HOT</p>
-            <img class="model" src="img/defature4.jpg" />
-            <div class="details">
-              <p id="details-1">Đầm cổ V bản lật DA974</p>
-              <p id="details-2">1,705,000 VNĐ</p>
-              <p>Đã bán : 30</p>
-            </div>
-          </div>
-          <div class="box-slide">
-            <p class="product">HOT</p>
-            <img class="model" src="img/defature1.jpg" />
-            <div class="details">
-              <p id="details-1">Đầm nữ bản lật DA971</p>
-              <p id="details-2">1,705,000 VNĐ</p>
-              <p>Đã bán : 30</p>
-            </div>
-          </div>
-          <div class="box-slide">
-            <p class="product">HOT</p>
-            <img class="model" src="img/defature4.jpg" />
-            <div class="details">
-              <p id="details-1">Đầm cổ V bản lật DA974</p>
-              <p id="details-2">1,705,000 VNĐ</p>
-              <p>Đã bán : 30</p>
-            </div>
-          </div>
-          <div class="box-slide">
-            <p class="product">HOT</p>
-            <img class="model" src="img/defature1.jpg" />
-            <div class="details">
-              <p id="details-1">Đầm nữ bản lật DA971</p>
-              <p id="details-2">1,705,000 VNĐ</p>
-              <p>Đã bán : 30</p>
-            </div>
-          </div>
-          <div class="box-slide">
-            <p class="product">HOT</p>
-            <img class="model" src="img/defature4.jpg" />
-            <div class="details">
-              <p id="details-1">Đầm cổ V bản lật DA974</p>
-              <p id="details-2">1,705,000 VNĐ</p>
-              <p>Đã bán : 30</p>
+              <p>Đã bán : 09</p>
             </div>
           </div>
           <div class="box-slide">
             <p class="product">HOT</p>
             <img class="model" src="img/defature2.png" />
-            <div class="details">
-              <p id="details-1">Đầm cổ V bản lật DA972</p>
-              <p id="details-2">1,705,000 VNĐ</p>
-              <p>Đã bán : 30</p>
+            <div class="readmore">
+              <i class="fas fa-cart-arrow-down"></i>
+              <span>Thêm vào giỏ hàng</span>
             </div>
-          </div>
-          <div class="box-slide">
-            <p class="product">HOT</p>
-            <img class="model" src="img/defature5.jpg" />
             <div class="details">
-              <p id="details-1">Đầm cổ V bản lật DA975</p>
+              <p id="details-1">Đầm cổ V bản lật DA974</p>
               <p id="details-2">1,705,000 VNĐ</p>
-              <p>Đã bán : 30</p>
+              <p>Đã bán : 20</p>
             </div>
           </div>
           <div class="box-slide">
             <p class="product">HOT</p>
             <img class="model" src="img/defature3.jpg" />
+            <div class="readmore">
+              <i class="fas fa-cart-arrow-down"></i>
+              <span>Thêm vào giỏ hàng</span>
+            </div>
             <div class="details">
-              <p id="details-1">Đầm cổ V bản lật DA973</p>
+              <p id="details-1">Đầm nữ bản lật DA971</p>
               <p id="details-2">1,705,000 VNĐ</p>
-              <p>Đã bán : 30</p>
+              <p>Đã bán : 48</p>
+            </div>
+          </div>
+          <div class="box-slide">
+            <p class="product">HOT</p>
+            <img class="model" src="img/defature4.jpg" />
+            <div class="readmore">
+              <i class="fas fa-cart-arrow-down"></i>
+              <span>Thêm vào giỏ hàng</span>
+            </div>
+            <div class="details">
+              <p id="details-1">Đầm cổ V bản lật DA974</p>
+              <p id="details-2">1,705,000 VNĐ</p>
+              <p>Đã bán : 29</p>
+            </div>
+          </div>
+          <div class="box-slide">
+            <p class="product">HOT</p>
+            <img class="model" src="img/defature5.jpg" />
+            <div class="readmore">
+              <i class="fas fa-cart-arrow-down"></i>
+              <span>Thêm vào giỏ hàng</span>
+            </div>
+            <div class="details">
+              <p id="details-1">Đầm nữ bản lật DA971</p>
+              <p id="details-2">1,705,000 VNĐ</p>
+              <p>Đã bán : 10</p>
             </div>
           </div>
           <div class="box-slide">
             <p class="product">HOT</p>
             <img class="model" src="img/defature6.jpg" />
+            <div class="readmore">
+              <i class="fas fa-cart-arrow-down"></i>
+              <span>Thêm vào giỏ hàng</span>
+            </div>
             <div class="details">
-              <p id="details-1">Đầm cổ V DA976</p>
+              <p id="details-1">Đầm cổ V bản lật DA974</p>
+              <p id="details-2">1,705,000 VNĐ</p>
+              <p>Đã bán : 50</p>
+            </div>
+          </div>
+          <div class="box-slide">
+            <p class="product">HOT</p>
+            <img class="model" src="img/product-slide5.jpg" />
+            <div class="readmore">
+              <i class="fas fa-cart-arrow-down"></i>
+              <span>Thêm vào giỏ hàng</span>
+            </div>
+            <div class="details">
+              <p id="details-1">Áo khoác mùa đông</p>
+              <p id="details-2">1,705,000 VNĐ</p>
+              <p>Đã bán : 25</p>
+            </div>
+          </div>
+          <div class="box-slide">
+            <p class="product">HOT</p>
+            <img class="model" src="img/product-slide7.jpg" />
+            <div class="readmore">
+              <i class="fas fa-cart-arrow-down"></i>
+              <span>Thêm vào giỏ hàng</span>
+            </div>
+            <div class="details">
+              <p id="details-1">Áo ấm mùa đông</p>
               <p id="details-2">1,705,000 VNĐ</p>
               <p>Đã bán : 30</p>
             </div>
@@ -432,6 +537,250 @@
         </div>
       </div>
       <!--End fashion-->
+      <!--Sport-->
+      <div class="sport">
+        <ul class="navbar-brand" id="topNav">
+          <li class="brand-new">
+            <i class="fas fa-volleyball-ball icons"></i>
+            <a href="#">THỂ THAO</a>
+          </li>
+          <li class="top-menu" id="all"><a href="#">Tất cả sản phẩm</a></li>
+          <li class="top-menu"><a href="#">Bóng đá</a></li>
+          <li class="top-menu"><a href="#">Tennis</a></li>
+          <li class="top-menu"><a href="#">Quần tạp gym</a></li>
+          <li class="top-menu"><a href="#">Máy tập thể thao</a></li>
+          <li class="top-menu"><a href="#">Giày thể thao</a></li>
+          <li class="top-menu"><a href="#">Áo thể thao</a></li>
+          <li class="dropdown brand">
+            <a href="#" class="fas fa-bars"></a>
+            <ul class="dropdown-menu sub">
+              <li class="dropdown-menu-item">
+                <a href="#" class="dropdown-menu-link">
+                  <div>
+                    <i class="fas fa-bahai"></i>
+                  </div>
+                  <span>Tất cả sản phẩm</span>
+                </a>
+              </li>
+              <li class="dropdown-menu-item">
+                <a href="#" class="dropdown-menu-link">
+                  <div>
+                    <i class="fas fa-bahai"></i>
+                  </div>
+                  <span>Bóng đá</span>
+                </a>
+              </li>
+              <li class="dropdown-menu-item">
+                <a href="#" class="dropdown-menu-link">
+                  <div>
+                    <i class="fas fa-bahai"></i>
+                  </div>
+                  <span>Tennis</span>
+                </a>
+              </li>
+              <li class="dropdown-menu-item">
+                <a href="#" class="dropdown-menu-link">
+                  <div>
+                    <i class="fas fa-bahai"></i>
+                  </div>
+                  <span>Quần tập gym</span>
+                </a>
+              </li>
+              <li class="dropdown-menu-item">
+                <a href="#" class="dropdown-menu-link">
+                  <div>
+                    <i class="fas fa-bahai"></i>
+                  </div>
+                  <span>Máy tập thể thao</span>
+                </a>
+              </li>
+              <li class="dropdown-menu-item">
+                <a href="#" class="dropdown-menu-link">
+                  <div>
+                    <i class="fas fa-bahai"></i>
+                  </div>
+                  <span>Giày thể thao</span>
+                </a>
+              </li>
+              <li class="dropdown-menu-item">
+                <a href="#" class="dropdown-menu-link">
+                  <div>
+                    <i class="fas fa-bahai"></i>
+                  </div>
+                  <span>Áo thể thao</span>
+                </a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+        <div class="grid-container">
+          <div class="box-slide">
+            <p class="product">HOT</p>
+            <img class="model" src="img/sport1.jpg" />
+            <div class="readmore">
+              <i class="fas fa-cart-arrow-down"></i>
+              <span>Thêm vào giỏ hàng</span>
+            </div>
+            <div class="details">
+              <p id="details-1">
+                Mũ Tennis Puma w's cat performance visor 908279
+              </p>
+              <p id="details-2">199,000 VNĐ</p>
+              <p>Đã bán : 09</p>
+            </div>
+          </div>
+          <div class="box-slide">
+            <p class="product">HOT</p>
+            <img class="model" src="img/sport2.jpg" />
+            <div class="readmore">
+              <i class="fas fa-cart-arrow-down"></i>
+              <span>Thêm vào giỏ hàng</span>
+            </div>
+            <div class="details">
+              <p id="details-1">Áo tennis nam Donexpro MC-8882-X (Xanh)</p>
+              <p id="details-2">299,000₫ VNĐ</p>
+              <p>Đã bán : 20</p>
+            </div>
+          </div>
+          <div class="box-slide">
+            <p class="product">HOT</p>
+            <img class="model" src="img/sport3.jpg" />
+            <div class="readmore">
+              <i class="fas fa-cart-arrow-down"></i>
+              <span>Thêm vào giỏ hàng</span>
+            </div>
+            <div class="details">
+              <p id="details-1">Vợt tennis Wilson Pro Staff 97 LS WRT7250102</p>
+              <p id="details-2">4,150,000 VNĐ</p>
+              <p>Đã bán : 48</p>
+            </div>
+          </div>
+          <div class="box-slide">
+            <p class="product">HOT</p>
+            <img class="model" src="img/sport4.jpg" />
+            <div class="readmore">
+              <i class="fas fa-cart-arrow-down"></i>
+              <span>Thêm vào giỏ hàng</span>
+            </div>
+            <div class="details">
+              <p id="details-1">Áo tennis nữDonexpro MC-8882-X (Đen)</p>
+              <p id="details-2">199,000 VNĐ</p>
+              <p>Đã bán : 29</p>
+            </div>
+          </div>
+          <div class="box-slide">
+            <p class="product">HOT</p>
+            <img class="model" src="img/sport5.jpg" />
+            <div class="readmore">
+              <i class="fas fa-cart-arrow-down"></i>
+              <span>Thêm vào giỏ hàng</span>
+            </div>
+            <div class="details">
+              <p id="details-1">Túi đựng đồ, dụng cụng thể thao K300</p>
+              <p id="details-2">120,000 VNĐ</p>
+              <p>Đã bán : 10</p>
+            </div>
+          </div>
+          <div class="box-slide">
+            <p class="product">HOT</p>
+            <img class="model" src="img/sport6.jpg" />
+            <div class="readmore">
+              <i class="fas fa-cart-arrow-down"></i>
+              <span>Thêm vào giỏ hàng</span>
+            </div>
+            <div class="details">
+              <p id="details-1">Giày Tennis T19 xanh</p>
+              <p id="details-2">790,000 VNĐ</p>
+              <p>Đã bán : 50</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--End sport-->
+      <!---->
+      <!--Services-->
+      <div class="services">
+        <div class="services-wrapper">
+          <div class="services-wrapper-icon">
+            <div class="icon">
+              <img src="img/icon-s1.png" />
+            </div>
+            <h4>GIÁ TRỊ LỚN</h4>
+          </div>
+          <div>
+            <p>
+              Chúng tôi cung cấp giá cả cạnh tranh nhất trên từng sản phẩm, phù
+              hợp với mọi túi tiền
+            </p>
+          </div>
+        </div>
+        <div class="services-wrapper">
+          <div class="services-wrapper-icon">
+            <div class="icon">
+              <img src="img/icon-s6.png" />
+            </div>
+            <h4>GIAO HÀNG</h4>
+          </div>
+          <div>
+            <p>
+              Giao hàng tận nơi, sản phẩm sẽ có mặt tại nhà bạn từ 3 đến 5 ngày
+              làm việc.
+            </p>
+          </div>
+        </div>
+        <div class="services-wrapper">
+          <div class="services-wrapper-icon">
+            <div class="icon">
+              <img src="img/icon-s2.png" />
+            </div>
+            <h4>SẢN PHẨM</h4>
+          </div>
+          <div>
+            <p>Sản phẩm chính hãng, bảo hành trên toàn quốc.</p>
+          </div>
+        </div>
+        <div class="services-wrapper">
+          <div class="services-wrapper-icon">
+            <div class="icon">
+              <img src="img/icon-s3.png" />
+            </div>
+            <h4>HỖ TRỢ</h4>
+          </div>
+          <div>
+            <p>
+              Hổ trợ 24/7. <br />
+              Phone: +84 908 7700 95. <br />
+              Emal: info@runtime.vn
+            </p>
+          </div>
+        </div>
+        <div class="services-wrapper">
+          <div class="services-wrapper-icon">
+            <div class="icon">
+              <img src="img/icon-s4.png" />
+            </div>
+            <h4>ỨNG DỤNG</h4>
+          </div>
+          <div>
+            <p>
+              Cài đặt ứng dụng khi mua hàng sẽ được giảm giá đặc biệt từ 5 đến
+              10%.
+            </p>
+          </div>
+        </div>
+        <div class="services-wrapper">
+          <div class="services-wrapper-icon">
+            <div class="icon">
+              <img src="img/icon-s5.png" />
+            </div>
+            <h4>THANH TOÁN</h4>
+          </div>
+          <div>
+            <p>Thanh toán khi nhận hàng. Phương thức thanh toán đa dạng</p>
+          </div>
+        </div>
+      </div>
+      <!--End services-->
     </div>
     <!--End main content-->
     <!--footer-->
@@ -477,14 +826,14 @@
             <form action="#">
               <div class="email">
                 <div class="text">Email *</div>
-                <input type="email" required />
+                <input type="email" required class="input" />
               </div>
               <div class="msg">
                 <div class="text">Message *</div>
-                <textarea id="" cols="25" rows="2" required></textarea>
+                <textarea id="" cols="25" rows="4" required></textarea>
               </div>
               <div class="btn">
-                <button type="submit">Send</button>
+                <input type="button" value="send" class="input" />
               </div>
             </form>
           </div>
